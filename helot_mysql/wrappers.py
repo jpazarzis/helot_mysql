@@ -8,7 +8,7 @@ from functools import wraps
 import logging
 
 import MySQLdb
-from helot.common import configuration
+from helot_common import configuration
 
 
 @contextmanager

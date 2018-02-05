@@ -7,7 +7,7 @@ for more you can read here:
 https://packaging.python.org/guides/packaging-namespace-packages/#native-namespace-packages
 
 """
-from setuptools import setup
+from setuptools import find_packages, setup
 
 setup(
     name="helot_mysql",
@@ -18,6 +18,6 @@ setup(
     install_requires=[
         "helot_common",
     ],
-    packages=["helot.mysql"],
+    packages=find_packages(),
     version='0.0.1',
 )
